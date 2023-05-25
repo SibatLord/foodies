@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #7149C6;
+    font-family: 'Merriweather', serif !important;
+}
+header h1{
+    color: white;
+}
+header, nav, footer {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+nav{
+    background: #FC2947;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+nav ul li a {
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFDEB9;
+}
+
+nav ul li a.active {
+    color: black;
+}
+.index_body .section_2, .food_body .section_1{
+    padding: 50px 20px;
+    background: #FE6244;
+}
+.index_body .section_2 h2{
+    color: white;
+    font-family: 'Asap', sans-serif;
+}
+.index_body .section_1{
+    padding: 4rem;
+    font-family: 'Merriweather', serif !important;
+    /* background: linear-gradient(to bottom, rgb(136, 136, 136), rgb(192, 192, 192)); */
+}
+.index_body .section_1 h1{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(41, 38, 38);
+}
+.foods{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    justify-items: center;
+}
+.food {
+    margin: 20px;
+    /* height: 100%; */
+    max-width: 300px;
+    /* height: 400px; */
+}
+.contact_body main{
+    padding: 5rem 20px;
+}
+.food img {
+    width: 300px;
+}
+.food p {
+    font-family: 'Asap', sans-serif;
+    font-size: small;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.822);
+}
+.food h3 {
+    font-family: 'Asap', sans-serif;
+    color: white;
+}
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+@media only screen  and (max-width: 700px) {
+    header{
+        width: 100vw;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    .index_body .section_1 h1{
+        font-size: 1rem;
+    }
+    .foods{
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media only screen  and (max-width: 1022px) {
+
+    .foods{
+        grid-template-columns: 1fr 1fr;
+    }
+}
